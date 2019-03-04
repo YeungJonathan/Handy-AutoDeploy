@@ -1,7 +1,7 @@
 # Handy-AutoDeploy
 This repo includes several handy autodeploy scripts and systemd files using terraform and ansible.
 
-This repo aims on deploying on the Vultr server. If you want to use GCP or AWS, please change the top part of the config.tf file.
+This repo aims on deploying on the Vultr server. If you want to use GCP or AWS, please change the top part of the config.tf file. I have also included a third party terraform provider for Vultr as terraform doesn't support Vultr
 
 When trying to autodeploy a server, please clone the repo and change the following things in the files:
 
