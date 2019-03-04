@@ -1,0 +1,19 @@
+[Unit]
+//update description
+Description = touchingBob
+After=network.target
+
+[Service]
+Type=Simple
+User=root
+Group=root
+Restart=on-failure
+RestartSec=10
+startLimitIntervalSec=60
+
+//update the working directory and exec start binary file
+WorkingDirectory=/dont/touch/bob
+ExecStart=/dont/touch/bob/bobBinary
+
+[Install]
+WantedBy=multi-user.target

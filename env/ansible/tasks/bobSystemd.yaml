@@ -1,0 +1,7 @@
+- name: Copy systemd file
+  copy: 
+    src=files/bob.service
+    dest=/etc/systemd/system/
+    mode="u=rwx,g=rwx,o=rx"
+- name: Reload Systemd
+  command: systemctl daemon-reload
